@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="encriptador.css"> 
+    <title>Encriptador Alura</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="encriptador.js"></script>
+    <script src="https://kit.fontawesome.com/fd24345705.js" crossorigin="anonymous"></script>
+    
+</head>
+<header>
+    <img class="alura-icon" src="https://www.alurastart.com.br/assets/api/share/alura-start.jpg">
+    <H2 id="titulo" class="title">Encriptador Alura</H2> 
+    <h4 id ="subtitulo" class="title">Dios es bueno</h4>
+    
+</header>
+
+<body>
+    <div class="mitad">
+    <div class="ingresar">
+    <form>
+        <input type="text" class="text-to-encrypt" id="textoAEncriptar" placeholder="Ingrese el texto a ser encryptado por favor.">
+    </form>   
+        <button id = "encryptButton" >Encriptar</button>
+        <button id = "unencryptedButton"> Desencriptar</button>
+        <h5>*Recuerda ingresar tu mensaje secreto solo en minusculas sin acentos,guiones ni caracteres especiales. (',/,-,$,#@ )*</h5>
+    
+    </div>
+   <div class="ingresado"  >
+    <textarea class="encrypted-text" id="textoEncriptado" placeholder="Informacion encriptada" ></textarea>
+    <button id="copyButton" >Copiar</button>
+    <button id="pasteButton">pegar</button>
+   </div> 
+   </div>
+
+   <footer>
+    
+    <h4 Class = "icono" ><i class="fa-solid fa-glasses"></i></i>Sr. B</h4>
+    <div class="datos"><h4 >Baroni Oliva.  Estudiante.  Desarollador Web</h4>
+    <H6 >Agradeciendo la ayuda de Ustedes - Dando siempre lo mejor de mi - creciendo cada dia - Mejorando como persona y cristiano</H6></div>
+   </footer>
+</body>
+<script>
+
+var button1 = document.querySelector("#encryptButton");
+button1.onclick = encriptar;
+
+var button2 = document.querySelector("#unencryptedButton");
+button2.onclick = desencriptar;
+
+
+var button3 = document.querySelector("#copyButton");
+button3.onclick = copiar;
+
+var button4 = document.querySelector("#pasteButton");
+button4.onclick = pegar ;
+</script>
+
+</html>
